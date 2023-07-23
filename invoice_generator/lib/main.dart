@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:invoice_generator/Views/screens/Customer_Invoice.dart';
 import 'package:invoice_generator/Views/screens/Invoice_Generator.dart';
+import 'package:invoice_generator/Views/screens/Invoice_PDF.dart';
 import 'package:invoice_generator/utils/MyRoutes.dart';
 import 'package:invoice_generator/utils/color_utils.dart';
 
@@ -28,6 +30,8 @@ class MyApp extends StatelessWidget {
         MyRoutes.home: (context) => const HomePage(),
         MyRoutes.SplashScreen: (context) => const SplashScreen(),
         MyRoutes.InvoiceGenerator: (context) => const Invoice_Generator(),
+        MyRoutes.CustomerInvoice: (context) => const Customer_Invoice(),
+        MyRoutes.InvoicePdf: (context) => const Invoice_PDF(),
       },
     );
   }

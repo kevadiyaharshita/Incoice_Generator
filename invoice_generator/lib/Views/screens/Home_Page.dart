@@ -20,6 +20,16 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: theme_1,
         foregroundColor: Colors.white,
         ),
+      body:Column(
+        children: [
+          Image(
+            image: AssetImage('assets/images/Spreadsheets-bro.png'),
+            height: 400,
+            width: 400,
+          ),
+          Text("Click On The Add Button To Create An Invoive",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,color: theme_1),)
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.of(context).pushNamed(MyRoutes.InvoiceGenerator);
